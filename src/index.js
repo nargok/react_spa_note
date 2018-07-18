@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+class SpaNote extends Component {
+  render() {
+    return (
+      <div>Hello SPA!</div>
+    )
+  }
+}
+
+ReactDOM.render(<SpaNote />, document.getElementById('root'));
